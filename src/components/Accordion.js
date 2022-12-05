@@ -1,9 +1,9 @@
 // this is accordion
 import React, { useState } from 'react'
 import { AccordionData } from './ArrodionData';
-import styled from 'styled-components';
-import { IconContext } from 'react-icons';
-import { FiPlus, FiMinus } from 'react-icons/fi';
+import styled from 'styled-components';   //npm install styled components
+import { IconContext } from 'react-icons';  
+import { FiPlus, FiMinus } from 'react-icons/fi';  //npm install react-icons
 
 const AccordionSection = styled.div`
 
@@ -54,7 +54,7 @@ function Accordion() {
         }
     }
     return (
-        <AccordionSection className="container">
+        <AccordionSection>
             <Container>
                 {AccordionData.map((item, key) => {
                     return (
